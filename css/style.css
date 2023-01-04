@@ -1,0 +1,217 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main{
+    width: 100%;
+}
+
+ 
+.navbar{
+    z-index: 1;
+    background-color: black;
+    position:fixed;
+    top:0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    min-width: 300PX;
+    
+
+}
+.navbar .logo{
+    margin-top: 20px;
+    position: relative;
+    max-width: 75px;
+    height: 65PX;
+    
+}
+.navbar img{
+    min-width: 75px;
+    width: 100%;
+    display: block;
+}
+.navbar-links ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 0;
+}
+
+.navbar-links li{
+    position: relative;
+    list-style: none;
+}
+
+.navbar-links li a{
+position: relative;
+margin: 0 10px;
+text-decoration: none;
+color: rgb(255, 255, 255);
+display: inline-block;
+}
+
+
+.toggle-button{
+    position: absolute;
+    top: 1.89rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 31PX;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.navbar-links a:hover{
+color: rgb(99, 94, 94);
+
+}
+
+@media (max-width:450px) {
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar  ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar li {
+        text-align: center;
+    }
+    .navbar-links li a{
+        padding: 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+   
+  
+}
+
+.intro{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 82px;
+    height: 100vh;
+}.textos{
+    
+    max-width: 500px;
+    
+}
+.img-intro{
+    display:block;
+    width: 100%;
+}
+
+.somos {
+    font-family:'Cabin', sans-serif;
+    font-size: 1.1rem;
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color:#000;
+    color: aliceblue;
+    height: 300px;
+    width: 100%;
+}
+.paragraph-somos{
+    line-height: 1.5;
+    padding: 10px;
+    margin: 0 autopx;
+}
+.somos-title{
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+}
+
+
+.servicios-title{
+    font-family: 'Cabin', sans-serif;
+    font-weight: 600;
+    margin-top: 78PX;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.servicios-img{
+
+    display: block;
+    margin: 30PX auto;
+    width: 45PX;
+}
+.centrado{
+    text-align: center;
+}
+
+.servicios{
+    font-family: 'Cabin', sans-serif;
+    font-weight: 600;
+    
+    margin-bottom: 100PX;
+    max-height: 600px;
+    
+}
+.servicios-conteiner{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.footer{
+    
+    height: 250px;
+    color: #fff;
+    background-color:black;
+}
+.footer-title{
+    text-align: center;
+}
+
+.footer-img{
+    display: block;
+    width: 50px;
+}
+.footer-text{
+    text-align: center;
+}
+.footer-title{
+    font-family: 'Cabin', sans-serif;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.footer-links{
+    
+    display: flex;
+   justify-content: center;
+   justify-content: space-around;
+}
+.carousel-inner {
+    max-height: 400px; /* establece la altura del carrusel */
+  }
+  
+  .carousel-inner img {
+    display: block;
+    width: 100%; /* hace que la imagen se ajuste al ancho del carrusel */
+    height: auto; /* hace que la imagen se ajuste al alto del carrusel */
+  }
+  
